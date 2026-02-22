@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A100000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000001 /* AppDelegate.swift */; };
+		A100000000000003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A200000000000003 /* LaunchScreen.storyboard */; };
+		A100000000000004 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000004 /* Match.swift */; };
+		A100000000000005 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000005 /* APIServiceProtocol.swift */; };
+		A100000000000006 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000006 /* MockAPIService.swift */; };
+		A100000000000007 /* MatchesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000007 /* MatchesStore.swift */; };
+		A100000000000008 /* MatchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000008 /* MatchListViewModel.swift */; };
+		A100000000000009 /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000009 /* MatchCell.swift */; };
+		A10000000000000A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000A /* ErrorView.swift */; };
+		A10000000000000B /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000B /* EmptyStateView.swift */; };
+		A10000000000000C /* MatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000C /* MatchListViewController.swift */; };
+		A10000000000000D /* MockDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000D /* MockDataFactory.swift */; };
+		A10000000000000E /* MockAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000E /* MockAPIServiceTests.swift */; };
+		A10000000000000F /* MatchesStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000F /* MatchesStoreTests.swift */; };
+		A100000000000010 /* MatchListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000010 /* MatchListViewModelTests.swift */; };
+		A100000000000011 /* MatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000011 /* MatchTests.swift */; };
+		A100000000000012 /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000012 /* APIErrorTests.swift */; };
+		A100000000000013 /* Odds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000013 /* Odds.swift */; };
+		A100000000000014 /* OddsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000014 /* OddsTests.swift */; };
+		A100000000000025 /* MatchDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000025 /* MatchDisplayModel.swift */; };
+		A100000000000019 /* ConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000019 /* ConnectionState.swift */; };
+		A10000000000001A /* ConnectionStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000001A /* ConnectionStateTests.swift */; };
+		A10000000000001B /* WebSocketServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000001B /* WebSocketServiceProtocol.swift */; };
+		A10000000000001C /* MockWebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000001C /* MockWebSocketService.swift */; };
+		A10000000000001D /* MockWebSocketServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000001D /* MockWebSocketServiceTests.swift */; };
+		A10000000000001E /* ReconnectionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000001E /* ReconnectionConfiguration.swift */; };
+		A10000000000001F /* ReconnectionConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000001F /* ReconnectionConfigurationTests.swift */; };
+		A100000000000020 /* ReconnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000020 /* ReconnectionManager.swift */; };
+		A100000000000021 /* ReconnectionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000021 /* ReconnectionManagerTests.swift */; };
+		A100000000000022 /* ConnectionStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000022 /* ConnectionStatusView.swift */; };
+		A100000000000023 /* ConnectionStatusViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000023 /* ConnectionStatusViewTests.swift */; };
+		A100000000000024 /* ReconnectionIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000024 /* ReconnectionIntegrationTests.swift */; };
+		A100000000000026 /* FPSMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000026 /* FPSMonitor.swift */; };
+		A100000000000027 /* FPSOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000027 /* FPSOverlayView.swift */; };
+		A100000000000028 /* FPSMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000028 /* FPSMonitorTests.swift */; };
+		A100000000000029 /* OddsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000029 /* OddsLabel.swift */; };
+		A10000000000002A /* OddsChangeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000002A /* OddsChangeResult.swift */; };
+		A10000000000002B /* OddsLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000002B /* OddsLabelTests.swift */; };
+		A10000000000002C /* MatchCellAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000002C /* MatchCellAnimationTests.swift */; };
+		A10000000000002D /* StoreSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000002D /* StoreSnapshot.swift */; };
+		A10000000000002E /* StateCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000002E /* StateCacheManager.swift */; };
+		A10000000000002F /* StoreSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000002F /* StoreSnapshotTests.swift */; };
+		A100000000000030 /* StateCacheManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000030 /* StateCacheManagerTests.swift */; };
+		A100000000000031 /* MatchesStoreSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000031 /* MatchesStoreSnapshotTests.swift */; };
+		A100000000000032 /* MatchListViewModelCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000000000032 /* MatchListViewModelCacheTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A400000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A500000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A300000000000001;
+			remoteInfo = LiveOdds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A200000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A200000000000003 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A200000000000004 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		A200000000000005 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		A200000000000006 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		A200000000000007 /* MatchesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesStore.swift; sourceTree = "<group>"; };
+		A200000000000008 /* MatchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewModel.swift; sourceTree = "<group>"; };
+		A200000000000009 /* MatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
+		A20000000000000A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		A20000000000000B /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		A20000000000000C /* MatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewController.swift; sourceTree = "<group>"; };
+		A20000000000000D /* MockDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataFactory.swift; sourceTree = "<group>"; };
+		A20000000000000E /* MockAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIServiceTests.swift; sourceTree = "<group>"; };
+		A20000000000000F /* MatchesStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesStoreTests.swift; sourceTree = "<group>"; };
+		A200000000000010 /* MatchListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewModelTests.swift; sourceTree = "<group>"; };
+		A200000000000011 /* MatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTests.swift; sourceTree = "<group>"; };
+		A200000000000012 /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
+		A200000000000013 /* Odds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Odds.swift; sourceTree = "<group>"; };
+		A200000000000014 /* OddsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsTests.swift; sourceTree = "<group>"; };
+		A200000000000025 /* MatchDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDisplayModel.swift; sourceTree = "<group>"; };
+		A200000000000019 /* ConnectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionState.swift; sourceTree = "<group>"; };
+		A20000000000001A /* ConnectionStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStateTests.swift; sourceTree = "<group>"; };
+		A20000000000001B /* WebSocketServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketServiceProtocol.swift; sourceTree = "<group>"; };
+		A20000000000001C /* MockWebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebSocketService.swift; sourceTree = "<group>"; };
+		A20000000000001D /* MockWebSocketServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebSocketServiceTests.swift; sourceTree = "<group>"; };
+		A20000000000001E /* ReconnectionConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconnectionConfiguration.swift; sourceTree = "<group>"; };
+		A20000000000001F /* ReconnectionConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconnectionConfigurationTests.swift; sourceTree = "<group>"; };
+		A200000000000020 /* ReconnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconnectionManager.swift; sourceTree = "<group>"; };
+		A200000000000021 /* ReconnectionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconnectionManagerTests.swift; sourceTree = "<group>"; };
+		A200000000000022 /* ConnectionStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStatusView.swift; sourceTree = "<group>"; };
+		A200000000000023 /* ConnectionStatusViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStatusViewTests.swift; sourceTree = "<group>"; };
+		A200000000000024 /* ReconnectionIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconnectionIntegrationTests.swift; sourceTree = "<group>"; };
+		A200000000000026 /* FPSMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPSMonitor.swift; sourceTree = "<group>"; };
+		A200000000000027 /* FPSOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPSOverlayView.swift; sourceTree = "<group>"; };
+		A200000000000028 /* FPSMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPSMonitorTests.swift; sourceTree = "<group>"; };
+		A200000000000029 /* OddsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsLabel.swift; sourceTree = "<group>"; };
+		A20000000000002A /* OddsChangeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsChangeResult.swift; sourceTree = "<group>"; };
+		A20000000000002B /* OddsLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsLabelTests.swift; sourceTree = "<group>"; };
+		A20000000000002C /* MatchCellAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCellAnimationTests.swift; sourceTree = "<group>"; };
+		A20000000000002D /* StoreSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSnapshot.swift; sourceTree = "<group>"; };
+		A20000000000002E /* StateCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCacheManager.swift; sourceTree = "<group>"; };
+		A20000000000002F /* StoreSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSnapshotTests.swift; sourceTree = "<group>"; };
+		A200000000000030 /* StateCacheManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCacheManagerTests.swift; sourceTree = "<group>"; };
+		A200000000000031 /* MatchesStoreSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesStoreSnapshotTests.swift; sourceTree = "<group>"; };
+		A200000000000032 /* MatchListViewModelCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewModelCacheTests.swift; sourceTree = "<group>"; };
+		A600000000000001 /* LiveOdds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveOdds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A600000000000002 /* LiveOddsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveOddsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A700000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A800000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A800000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A900000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A900000000000002 /* LiveOdds */,
+				A900000000000003 /* LiveOddsTests */,
+				A900000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A900000000000002 /* LiveOdds */ = {
+			isa = PBXGroup;
+			children = (
+				A900000000000005 /* Sources */,
+				A200000000000003 /* LaunchScreen.storyboard */,
+				A700000000000001 /* Info.plist */,
+			);
+			path = LiveOdds;
+			sourceTree = "<group>";
+		};
+		A900000000000003 /* LiveOddsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A900000000000010 /* Helpers */,
+				A900000000000014 /* Models */,
+				A900000000000011 /* Services */,
+				A900000000000012 /* Store */,
+				A900000000000013 /* ViewModels */,
+				A900000000000015 /* Views */,
+				A900000000000016 /* Integration */,
+			);
+			path = LiveOddsTests;
+			sourceTree = "<group>";
+		};
+		A900000000000015 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A900000000000018 /* Components */,
+				A200000000000023 /* ConnectionStatusViewTests.swift */,
+				A20000000000002C /* MatchCellAnimationTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A900000000000018 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000002B /* OddsLabelTests.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A900000000000016 /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				A200000000000024 /* ReconnectionIntegrationTests.swift */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
+		A900000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A600000000000001 /* LiveOdds.app */,
+				A600000000000002 /* LiveOddsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A900000000000005 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A200000000000001 /* AppDelegate.swift */,
+				A900000000000006 /* Models */,
+				A900000000000007 /* Services */,
+				A900000000000008 /* Store */,
+				A900000000000009 /* ViewModels */,
+				A90000000000000A /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A900000000000006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A200000000000004 /* Match.swift */,
+				A200000000000025 /* MatchDisplayModel.swift */,
+				A200000000000013 /* Odds.swift */,
+				A20000000000002A /* OddsChangeResult.swift */,
+				A200000000000019 /* ConnectionState.swift */,
+				A20000000000002D /* StoreSnapshot.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A900000000000007 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A200000000000005 /* APIServiceProtocol.swift */,
+				A200000000000006 /* MockAPIService.swift */,
+				A20000000000001B /* WebSocketServiceProtocol.swift */,
+				A20000000000001C /* MockWebSocketService.swift */,
+				A20000000000001E /* ReconnectionConfiguration.swift */,
+				A200000000000020 /* ReconnectionManager.swift */,
+				A200000000000026 /* FPSMonitor.swift */,
+				A20000000000002E /* StateCacheManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A900000000000008 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				A200000000000007 /* MatchesStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		A900000000000009 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A200000000000008 /* MatchListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A90000000000000A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A900000000000017 /* Components */,
+				A200000000000009 /* MatchCell.swift */,
+				A20000000000000A /* ErrorView.swift */,
+				A20000000000000B /* EmptyStateView.swift */,
+				A20000000000000C /* MatchListViewController.swift */,
+				A200000000000022 /* ConnectionStatusView.swift */,
+				A200000000000027 /* FPSOverlayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A900000000000017 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A200000000000029 /* OddsLabel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A900000000000010 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000D /* MockDataFactory.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A900000000000011 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A200000000000012 /* APIErrorTests.swift */,
+				A20000000000000E /* MockAPIServiceTests.swift */,
+				A20000000000001D /* MockWebSocketServiceTests.swift */,
+				A20000000000001F /* ReconnectionConfigurationTests.swift */,
+				A200000000000021 /* ReconnectionManagerTests.swift */,
+				A200000000000028 /* FPSMonitorTests.swift */,
+				A200000000000030 /* StateCacheManagerTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A900000000000012 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000F /* MatchesStoreTests.swift */,
+				A200000000000031 /* MatchesStoreSnapshotTests.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		A900000000000013 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A200000000000010 /* MatchListViewModelTests.swift */,
+				A200000000000032 /* MatchListViewModelCacheTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A900000000000014 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A200000000000011 /* MatchTests.swift */,
+				A200000000000014 /* OddsTests.swift */,
+				A20000000000001A /* ConnectionStateTests.swift */,
+				A20000000000002F /* StoreSnapshotTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A300000000000001 /* LiveOdds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB00000000000001 /* Build configuration list for PBXNativeTarget "LiveOdds" */;
+			buildPhases = (
+				AA00000000000001 /* Sources */,
+				A800000000000001 /* Frameworks */,
+				AC00000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveOdds;
+			productName = LiveOdds;
+			productReference = A600000000000001 /* LiveOdds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A300000000000002 /* LiveOddsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB00000000000002 /* Build configuration list for PBXNativeTarget "LiveOddsTests" */;
+			buildPhases = (
+				AA00000000000002 /* Sources */,
+				A800000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A400000000000002 /* PBXTargetDependency */,
+			);
+			name = LiveOddsTests;
+			productName = LiveOddsTests;
+			productReference = A600000000000002 /* LiveOddsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A500000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A300000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A300000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A300000000000001;
+					};
+				};
+			};
+			buildConfigurationList = AB00000000000003 /* Build configuration list for PBXProject "LiveOdds" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A900000000000001;
+			productRefGroup = A900000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A300000000000001 /* LiveOdds */,
+				A300000000000002 /* LiveOddsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC00000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000000000003 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA00000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000000000001 /* AppDelegate.swift in Sources */,
+				A100000000000004 /* Match.swift in Sources */,
+				A100000000000025 /* MatchDisplayModel.swift in Sources */,
+				A100000000000013 /* Odds.swift in Sources */,
+				A100000000000005 /* APIServiceProtocol.swift in Sources */,
+				A100000000000006 /* MockAPIService.swift in Sources */,
+				A100000000000007 /* MatchesStore.swift in Sources */,
+				A100000000000008 /* MatchListViewModel.swift in Sources */,
+				A100000000000009 /* MatchCell.swift in Sources */,
+				A10000000000000A /* ErrorView.swift in Sources */,
+				A10000000000000B /* EmptyStateView.swift in Sources */,
+				A10000000000000C /* MatchListViewController.swift in Sources */,
+				A100000000000019 /* ConnectionState.swift in Sources */,
+				A10000000000001B /* WebSocketServiceProtocol.swift in Sources */,
+				A10000000000001C /* MockWebSocketService.swift in Sources */,
+				A10000000000001E /* ReconnectionConfiguration.swift in Sources */,
+				A100000000000020 /* ReconnectionManager.swift in Sources */,
+				A100000000000022 /* ConnectionStatusView.swift in Sources */,
+				A100000000000026 /* FPSMonitor.swift in Sources */,
+				A100000000000027 /* FPSOverlayView.swift in Sources */,
+				A100000000000029 /* OddsLabel.swift in Sources */,
+				A10000000000002A /* OddsChangeResult.swift in Sources */,
+				A10000000000002D /* StoreSnapshot.swift in Sources */,
+				A10000000000002E /* StateCacheManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000D /* MockDataFactory.swift in Sources */,
+				A10000000000000E /* MockAPIServiceTests.swift in Sources */,
+				A10000000000000F /* MatchesStoreTests.swift in Sources */,
+				A100000000000010 /* MatchListViewModelTests.swift in Sources */,
+				A100000000000011 /* MatchTests.swift in Sources */,
+				A100000000000012 /* APIErrorTests.swift in Sources */,
+				A100000000000014 /* OddsTests.swift in Sources */,
+				A10000000000001A /* ConnectionStateTests.swift in Sources */,
+				A10000000000001D /* MockWebSocketServiceTests.swift in Sources */,
+				A10000000000001F /* ReconnectionConfigurationTests.swift in Sources */,
+				A100000000000021 /* ReconnectionManagerTests.swift in Sources */,
+				A100000000000023 /* ConnectionStatusViewTests.swift in Sources */,
+				A100000000000024 /* ReconnectionIntegrationTests.swift in Sources */,
+				A100000000000028 /* FPSMonitorTests.swift in Sources */,
+				A10000000000002B /* OddsLabelTests.swift in Sources */,
+				A10000000000002C /* MatchCellAnimationTests.swift in Sources */,
+				A10000000000002F /* StoreSnapshotTests.swift in Sources */,
+				A100000000000030 /* StateCacheManagerTests.swift in Sources */,
+				A100000000000031 /* MatchesStoreSnapshotTests.swift in Sources */,
+				A100000000000032 /* MatchListViewModelCacheTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A400000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A300000000000001 /* LiveOdds */;
+			targetProxy = A400000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD00000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD00000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD00000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveOdds/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opennet.LiveOdds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD00000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveOdds/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opennet.LiveOdds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD00000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opennet.LiveOddsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveOdds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiveOdds";
+			};
+			name = Debug;
+		};
+		AD00000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opennet.LiveOddsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveOdds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiveOdds";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB00000000000001 /* Build configuration list for PBXNativeTarget "LiveOdds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD00000000000003 /* Debug */,
+				AD00000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB00000000000002 /* Build configuration list for PBXNativeTarget "LiveOddsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD00000000000005 /* Debug */,
+				AD00000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB00000000000003 /* Build configuration list for PBXProject "LiveOdds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD00000000000001 /* Debug */,
+				AD00000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A500000000000001 /* Project object */;
+}
