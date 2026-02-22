@@ -67,9 +67,7 @@ ViewController                    ViewModel (@MainActor)
 
 ---
 
-## 6. Demo 
-- 展示賠率更新、排序與FPS指標
-  
-  ![Demo](demo.gif)
-
+## 6. Demo Video 
+- 展示賠率更新、排序與FPS指標：[Watch Demo Video](https://drive.google.com/file/d/1dWeJsLgRi_tKAU-1ST3ifjGdClHkwWAP/view?usp=share_link)
+ 
  
